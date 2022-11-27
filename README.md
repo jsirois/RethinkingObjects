@@ -46,12 +46,7 @@ machine, the following instructions will guide you.
 * <strong><code>apt list | grep python3.9</code></strong>
 * Install it:
 * <strong><code>sudo apt install python3.9</code></strong>
-* Let’s try just adding it to <code>$PATH</code> without messing with <code>update-alternatives</code>
-* If you run <strong><code>which python3.9</code></strong>, you should see <code>/usr/bin/python3.9</code>
-* Edit it into the $PATH: <strong><code>code ~/.bashrc </code></strong>and add this at the end of the file:
-* <strong><code>export PATH="$PATH/usr/bin/python3.9"</code></strong>
-* Either <strong><code>source ~/.bashrc</code></strong> or start a new bash shell
-* <strong><code>echo $PATH</code></strong> to verify it’s at the end.
+* If you run <strong><code>which python3.9</code></strong>, you should see <code>/usr/bin/python3.9</code> which means its already on the PATH.
 * Now when you run Pants you may get a new error: \
 <code>ModuleNotFoundError: No module named 'distutils.util'</code>
 * Fix with: <strong><code>sudo apt install python3.9-distutils</code></strong>
